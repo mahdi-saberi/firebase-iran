@@ -1,0 +1,25 @@
+version: '3.5'
+services:
+
+  nginx:
+    build:
+      context: nginx/docker
+      args:
+        uid: ${UID}
+        gid: ${GID}
+    container_name: ${APP_NAME}_nginx
+    restart: always
+    volumes:
+      - ./nginx/logs/:/var/log/nginx/
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+#      - ./php/code/:/var/www/html/
+#      - ./certbot/conf/:/etc/letsencrypt/
+#      - ./certbot/www/:/var/www/certbot/
+    ports:
+#      - ${HOST_PORT}:80
+      - 443:443
+    logging:
+      options:
+        max-size: "1m"
+        max-file: "10"
+
