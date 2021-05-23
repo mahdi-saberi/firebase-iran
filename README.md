@@ -5,3 +5,5 @@ to run just add
 
 docker-compose up -d
 
+شما می توانید با تغییر دادن فایل ذیل و ایجاد دایرکتیوها مجزا به ازای هر سرویس که ایران را محدود کرده یک مسیر جدید ایجاد کنید
+ firebase-iran/nginx/conf.d/localhost.conf 
