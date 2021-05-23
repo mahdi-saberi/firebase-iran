@@ -3,8 +3,8 @@
 
 جهت راه اندازی
 
-git clone https://github.com/mahdi-saberi/firebase-iran.git
-docker-compose up -d
+## git clone https://github.com/mahdi-saberi/firebase-iran.git
+## docker-compose up -d
 
 
 ## شما می توانید با تغییر دادن فایل ذیل و ایجاد دایرکتیوها مجزا به ازای هر سرویس که ایران را محدود کرده یک مسیر جدید ایجاد کنید
